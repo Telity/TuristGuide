@@ -36,4 +36,9 @@ public class TouristController {
         TouristAttraction  attraction1 = touristService.addAttraction(attraction);
         return new ResponseEntity<>(attraction1, HttpStatus.CREATED);
     }
+    @PostMapping("/update")
+
+
+    @PostMapping("/delete/{name}")
+
 }
