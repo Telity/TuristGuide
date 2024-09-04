@@ -36,9 +36,16 @@ public class TouristController {
         TouristAttraction  attraction1 = touristService.addAttraction(attraction);
         return new ResponseEntity<>(attraction1, HttpStatus.CREATED);
     }
-    @PostMapping("/update")
+    @PutMapping("/{name}")
+    public ResponseEntity<TouristAttraction> updateAttraction(@PathVariable String name, @RequestBody TouristAttraction attraction) {
+        TouristAttraction attraction2 = touristService.updateAttraction(attraction);
+        return new ResponseEntity<>(attraction2, HttpStatus.OK);
+    }
 
-
-    @PostMapping("/delete/{name}")
+    @DeleteMapping("/delete/{name}")
+    public ResponseEntity<TouristAttraction> deleteAttraction(@RequestBody TouristAttraction attraction) {
+        TouristAttraction attraction3 = touristService.deleteAttraction(attraction);
+        return new ResponseEntity<>(attraction3, HttpStatus.OK);
+    }
 
 }

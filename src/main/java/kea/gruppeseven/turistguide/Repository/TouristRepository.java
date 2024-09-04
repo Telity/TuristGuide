@@ -37,6 +37,17 @@ public class TouristRepository {
             return attraction;
     }
 
+    public TouristAttraction updateAttraction(TouristAttraction attraction) {
+        int index = attractions.indexOf(attraction);
+        attractions.set(index, attraction);
+        return attraction;
+    }
+
+    public TouristAttraction deleteAttraction(TouristAttraction attraction) {
+        attractions.remove(attraction);
+        return attraction;
+    }
+
 
 
 }
