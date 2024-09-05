@@ -1,5 +1,5 @@
 p{
-    font-family: fantasy, sans-serif;
+    font-family: sans-serif;
     color:black;
 }
 body{
@@ -24,7 +24,7 @@ body{
         'header header'
         'article aside'
         'footer footer';
-        grid-template-columns:65em 1fr;
+        grid-template-columns:auto 1fr;
         grid-template-rows: auto 1fr auto;
     }
 
@@ -78,7 +78,7 @@ footer{
 }
 
 li{
-    font-family: fantasy, sans-serif;
+    font-family: sans-serif;
 }
 
 .menu { /* menu boksen */
