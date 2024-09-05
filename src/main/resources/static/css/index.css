@@ -1,0 +1,55 @@
+p{
+    font-family: fantasy, sans-serif;
+    color:black;
+ }
+body{
+    min-height: 100vh;
+    width: auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+        'header'
+        'nav'
+        'article'
+        'footer';
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+
+}
+@media (min-width: 40em){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-areas:
+        'header header'
+        'nav article'
+        'footer footer';
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto 1fr auto;
+
+    }
+
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+}
+body {
+    background-color: #E9E6DD;
+}
+header,
+nav,
+main,
+footer {
+    background: #f4f4f4;
+    padding: 1em;
+}
+
