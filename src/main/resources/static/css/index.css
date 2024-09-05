@@ -33,6 +33,16 @@ body{
 header {
     grid-area: header;
 }
+header {
+    background-image: url('https://www.usnews.com/object/image/00000163-8d5b-d398-ad7f-8dfff5760000/3-eiffel-tower-getty.jpg?update-time=1527086483519&size=responsive640');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjust the height as needed */
+}
+h1{
+    color: black;
+    text-align: center;
+}
 nav {
     grid-area: nav;
 }
@@ -45,7 +55,7 @@ footer {
 body {
     background-color: #E9E6DD;
 }
-header,
+
 nav,
 main,
 footer {
