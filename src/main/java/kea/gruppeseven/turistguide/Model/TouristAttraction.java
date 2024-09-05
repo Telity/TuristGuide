@@ -1,7 +1,6 @@
 package kea.gruppeseven.turistguide.Model;
 
 public class TouristAttraction {
-
     private String name;
     private String description;
 
